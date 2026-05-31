@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environnement & Secrets
+.env
+.env.local
+.env.*.local
+
+# Équipe IA / Data
+models/
+data/
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.ipynb
+
+# Outils & IDE
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/

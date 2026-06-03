@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from app.api.v1.endpoints import health
+from app.api.v1.endpoints import optimization
 
-api_router = APIRouter(prefix="/api/v1")
+api_router = APIRouter()
 
-# Inclusion du routeur dédié à l'état de santé du service
-api_router.include_router(health.router, tags=["System / Health"])
+# Branchement officiel de la route de Borja conforme aux consignes
+api_router.include_router(optimization.router, prefix="/optimization", tags=["optimization"])

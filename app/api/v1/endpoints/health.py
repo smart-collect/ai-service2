@@ -17,7 +17,7 @@ async def get_health() -> dict:
             "version": settings.APP_VERSION,
             "uptime_seconds": uptime
         },
-        "meta": MetaData(computation_time_ms=0.0, model_version=settings.APP_VERSION)
+        "meta": MetaData(computation_time_ms=0.0, model_version_info=settings.APP_VERSION)
     }
 
 @router.get("/version", response_model=SuccessResponse)
@@ -30,5 +30,5 @@ async def get_version() -> dict:
             "version": settings.APP_VERSION,
             "environment": settings.APP_ENV
         },
-        "meta": MetaData(computation_time_ms=0.0, model_version=settings.APP_VERSION)
+        "meta": MetaData(computation_time_ms=0.0, model_version_info=settings.APP_VERSION)
     }

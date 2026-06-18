@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 
 class MetaData(BaseModel):
     computation_time_ms: Optional[float] = Field(None, description="Temps de calcul de l'algorithme en millisecondes")
-    model_version: str = Field("1.0.0", description="Version du modèle IA utilisé")
+    model_version_info: str = Field("1.0.0", description="Version du modèle IA utilisé")
 
 class SuccessResponse(BaseModel):
     success: bool = Field(True, description="Indique si la requête a réussi")

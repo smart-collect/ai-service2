@@ -20,6 +20,6 @@ class ErrorHandlerMiddleware(BaseHTTPMiddleware):
                         "message": "Une erreur interne est survenue sur l'ai-service.",
                         "details": str(exc) if request.app.debug else None
                     },
-                    "meta": {"model_version": "1.0.0"}
+                    "meta": {"model_version_info": "1.0.0"}
                 }
             )
